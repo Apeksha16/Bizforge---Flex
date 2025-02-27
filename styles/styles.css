@@ -6,7 +6,7 @@
 
 .logo {
   height: 32px;
-  width: 94.18181610107422px;
+  width: 94px;
   top: 24px;
   left: 88px;
 }
@@ -347,6 +347,9 @@
 .testimonial-image {
   width: 456px;
   height: 456px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  margin-right: 130px;
 }
 
 .testimonial-image img {
@@ -368,28 +371,44 @@
   border-radius: 5px;
   font-weight: bold;
   font-size: 14px;
+  margin-bottom: 90px;
 }
 
 .quote {
-  font-size: 42px;
+  width: 554px;
+  color: var(--Gray-900, #2A3342);
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
   font-weight: 600;
-  color: #333;
-  line-height: 1.5;
-  margin-top: 120px;
-  color: #4a5568;
+  line-height: 44px; /* 122.222% */
+  letter-spacing: -0.72px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 90px;
 }
 
 .author {
-  font-size: 30px;
+  color: var(--Gray-800, #333F51);
+  /* text-align: center; */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
   font-weight: 600;
-  margin-top: 10px;
-  color: #718096;
+  line-height: 32px; /* 133.333% */
+  margin-top: 0;
 }
 
 .position {
-  font-size: 28px;
-  color: #a0aec0;
-  margin-top: 5px;
+  color: var(--Gray-500, #556987);
+  /* text-align: center; */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+  margin-top: 4px;
+  margin-bottom: 56px;
 }
 
 .dots {
@@ -411,20 +430,26 @@
 }
 
 .quote-img {
-  height: 98px;
   width: 142px;
-  position: relative;
-  z-index: 1;
-  bottom: 278px;
-  right: 22px;
+  height: 98px;
+  flex-shrink: 0;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+  opacity: 0.5;
 }
 
 .quote-img.inverted {
+  width: 142px;
+  height: 98px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 86px;
+  left: 380px;
+  z-index: -1;
+  opacity: 0.5;
   transform: rotate(180deg);
-  position: relative;
-  z-index: 1;
-  bottom: 92px;
-  left: 275px;
 }
 
 .contact-section {
@@ -605,12 +630,20 @@
 }
 
 .footer {
-  background: #1e293b;
+  width: 100%;
+  height: 380px;
+  flex-shrink: 0;
+  background-color: #2A3342;
   color: #cbd5e1;
   text-align: center;
   padding: 40px 20px;
   font-family: "Poppins", sans-serif;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 .footer-content {
@@ -642,7 +675,7 @@
   justify-content: center;
   gap: 30px;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 45px; /* Adjusted margin */
 }
 
 .footer-links li {
@@ -666,7 +699,7 @@ hr {
   height: 1px;
   background: #334155;
   margin: 20px auto;
-  width: 90%;
+  width: 100%;
 }
 
 .footer-text {
